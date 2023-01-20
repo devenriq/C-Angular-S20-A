@@ -1,0 +1,22 @@
+<div class="w-full h-screen flex justify-center items-center">
+  <div class="">
+    <img
+      src="https://cdn.freebiesupply.com/logos/large/2x/angular-icon-logo-png-transparent.png"
+      alt=""
+      width="400px"
+    />
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.company.catchPhrase }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
